@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --first-color: #b9e5e8;
+  --second-color: #2e4a4e;
+  --third-color: #f3fafa;
+  --fourth-color: #ffffff;
+  --font-color1: #333333;
+  --font-color2: #606060;
+  --btn-color1: #205c66;
+  --btn-color2: #f3fafa;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  background-color: var(--first-color);
+}
