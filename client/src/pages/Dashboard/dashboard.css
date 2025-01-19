@@ -1,0 +1,27 @@
+.dashboard{
+    border: 3px green solid;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.word-space_container{
+    border: 2px red solid;
+    width: 70vw;
+}
+
+.word-space{
+    border: 2px solid yellow;
+    height: 70vh;
+    margin-bottom: 2rem;
+}
+
+.microphone{
+    border: 2px blue solid;
+    height: 20vh;
+}
+
+.storage_container{
+    border: 2.5px blue solid;
+    width: 25vw;
+}
