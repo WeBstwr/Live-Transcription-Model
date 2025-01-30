@@ -26,4 +26,5 @@ body {
   font-family: "Playwrite GB S", cursive;
   font-optical-sizing: auto;
   background-color: var(--first-color);
+  background: linear-gradient(to right, #b9e5e8, #96c9f4);
 }

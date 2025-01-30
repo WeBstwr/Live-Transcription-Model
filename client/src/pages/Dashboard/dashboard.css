@@ -1,55 +1,116 @@
 .dashboard {
-  border: 3px green solid;
+  /* border: 3px green solid; */
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
 .word-space_container {
-  border: 2px red solid;
+  /* border: 2px red solid; */
   width: 70vw;
 }
 
 .word-space {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   height: 70vh;
   margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 11px 17px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 11px 17px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 17px 10px rgba(0, 0, 0, 0.75);
+}
+
+.word-space h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .microphone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  border: 2px blue solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px blue solid; */
   height: 20vh;
+  border-radius: 10px;
+  box-shadow: 0px 11px 17px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 11px 17px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 17px 10px rgba(0, 0, 0, 0.75);
 }
 
 .storage_container {
-  border: 2.5px blue solid;
+  /* border: 2px solid yellow; */
   width: 25vw;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.storage_container h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.file {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--first-color);
+  border-radius: 10px;
+  padding: 0 5px;
+  margin-bottom: 1rem;
+  box-shadow: 7px 3px 25px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px 3px 25px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 3px 25px 2px rgba(0, 0, 0, 0.75);
+}
+
+.file p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--font-color2);
+  text-transform: capitalize;
+}
+
+.storage_container:hover p {
+  cursor: pointer;
+}
+
+.delete_file .trash-icon {
+  /* border: 2px red solid; */
+  --size: 3rem;
+  height: var(--size);
+  width: var(--size);
+  fill: red;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+.delete_file .trash-icon:hover {
+  background-color: darkred;
 }
 
 .icons_container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .icons-icon-wrapper {
-    --size: 5rem;
-    height: var(--size);
-    width: var(--size);
-    display: grid;
-    place-content: center;
-    border-radius: 50%;
-  }
-  
-  .icons-icon-wrapper svg {
-    --size: 5rem;
-    height: var(--size);
-    width: var(--size);
-    fill: var(--second-color);
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-icon-wrapper {
+  --size: 5rem;
+  height: var(--size);
+  width: var(--size);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.icons-icon-wrapper svg {
+  --size: 5rem;
+  height: var(--size);
+  width: var(--size);
+  fill: var(--second-color);
+  cursor: pointer;
+}
