@@ -1,0 +1,7 @@
+asr_model/.venv/
+asr_model/__pycache__/
+asr_model/*.pyc
+asr_model/*.pyo
+asr_model/*.pyd
+asr_model/.mypy_cache/
+asr_model/.pytest_cache/
