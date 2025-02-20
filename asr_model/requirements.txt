@@ -1,0 +1,7 @@
+pydub
+psycopg2-binary
+sounddevice
+numpy
+scipy
+librosa
+SpeechRecognition

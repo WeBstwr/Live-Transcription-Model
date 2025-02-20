@@ -5,3 +5,4 @@ asr_model/*.pyo
 asr_model/*.pyd
 asr_model/.mypy_cache/
 asr_model/.pytest_cache/
+asr_model/.env
