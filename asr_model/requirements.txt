@@ -5,3 +5,7 @@ numpy
 scipy
 librosa
 SpeechRecognition
+transformers
+torch
+python-dotenv
+pandas
