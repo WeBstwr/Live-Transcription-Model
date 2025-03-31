@@ -6,3 +6,8 @@ asr_model/*.pyd
 asr_model/.mypy_cache/
 asr_model/.pytest_cache/
 asr_model/.env
+whisper_small_local
+audio_files
+manual_update_batch.py
+consolidate_checkpoints.py
+fine_tuned_whisper_model

@@ -9,6 +9,7 @@ def create_tables():
             id SERIAL PRIMARY KEY,
             filename TEXT NOT NULL,
             transcription TEXT NOT NULL,
+            translation TEXT,  -- Added translation column
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
         """
