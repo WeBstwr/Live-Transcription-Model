@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AudioTranscription {
+  id               Int       @id(map: "luhya_family_dataset_pkey") @default(autoincrement())
+  relationship     String
+  maragoli         String
+  notes            String?
+  example_sentence String?
+  filename         String
+  transcription    String
+  created_at       DateTime? @default(now()) @db.Timestamp(6)
+  translation      String?
+
+  @@map("audio_transcriptions")
+}
