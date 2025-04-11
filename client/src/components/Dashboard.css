@@ -1,0 +1,117 @@
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button.start {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.controls button.stop {
+    background-color: #f44336;
+    color: white;
+}
+
+.transcription-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transcript-box {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+.translation-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.stored-files {
+    margin-top: 30px;
+}
+
+.files-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.file-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-item.selected {
+    background-color: #e3f2fd;
+    border: 2px solid #2196f3;
+}
+
+.filename {
+    font-weight: 500;
+    color: #333;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.processing-message {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+} 

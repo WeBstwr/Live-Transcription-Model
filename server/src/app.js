@@ -4,28 +4,31 @@ const cors = require("cors");
 const morgan = require("morgan");
 require("dotenv").config();
 
-const app = express();
-
-// Middlewares
-app.use(cors());
-app.use(express.json());
-app.use(morgan("dev"));
-
-// Import routes
 const transcriptionRoutes = require("./routes/transcriptionRoutes");
 const recordRoutes = require("./routes/recordRoutes");
 
-// Use routes
+const app = express();
+
+// Increase timeout to 10 minutes
+app.use((req, res, next) => {
+  res.setTimeout(600000); // 10 minutes
+  next();
+});
+
+// Enable CORS for all routes
+app.use(cors());
+
+// Middleware
+app.use(express.json());
+app.use(morgan("dev"));
+
+// Routes
 app.use("/api/transcriptions", transcriptionRoutes);
 app.use("/api/record", recordRoutes);
 
+// Root route
 app.get("/", (req, res) => {
-  res.json({ message: "Live Transcription API is running!" });
+  res.json({ message: "API is running" });
 });
 
 module.exports = app;
-app.use(morgan("dev"));
-console.log("Server is running on port 3000");
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});

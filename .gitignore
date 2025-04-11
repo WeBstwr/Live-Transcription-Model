@@ -11,3 +11,5 @@ audio_files
 manual_update_batch.py
 consolidate_checkpoints.py
 fine_tuned_whisper_model
+# FFmpeg
+ffmpeg/
